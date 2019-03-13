@@ -1,0 +1,11 @@
+[Unit]
+Description=Jenkins
+
+[Service]
+User=jenkins
+WOrkingDirectory=/home/spring
+ExecStart=/usr/bin/java -jar /home/jenkins/jenkins.war
+
+[Install]
+WantedBy=multi-user.target
+
